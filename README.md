@@ -1,7 +1,7 @@
 # 220V AC to 10.2V DC Regulated Power Supply
 
 ## Overview
-This repository contains the schematic, simulation files, and custom PCB layout for a regulated DC power supply. The circuit converts 220V AC mains electricity into a stable 10.2V DC output. This project was developed as part of the ECE211s Electronic Circuits I course at Ain Shams University. 
+This repository contains the schematic, simulation files, and custom PCB layout for a regulated DC power supply. The circuit converts 220V AC mains electricity into a stable 10.2V DC output. This project was developed as part of the ECE211s Electronics course at Ain Shams University. 
 
 The design utilizes a Zener shunt regulation strategy and was fully simulated in Proteus 8 prior to hardware implementation.
 
@@ -37,10 +37,9 @@ The power supply is built using four primary functional blocks:
 | Indicator LED | LED-3MM-R (Red) | 1 | Power indicator |
 
 ## Repository Contents
-* `Proteus_Simulation/`: Contains the `.pdsprj` source files for the circuit simulation.
-* `PCB_Files/`: Contains the layout files and Gerbers for the custom PCB.
-* `Docs/`: Contains the detailed hand analysis for component sizing, including filter capacitance and Zener series resistor calculations.
-* `Images/`: Simulation waveforms, PCB layout renders, and photos of the final soldered board under testing.
+* `PS_PCB.pdsprj`: The Proteus 8 simulation source file containing the circuit schematic and PCB layout data.
+* `PS_PCB.png`: A snapshot of the custom PCB layout designed for the power supply.
+* `Sim1.png`: High-resolution export of the Proteus circuit schematic and simulation state.
 
 ## Testing & Validation
 The circuit was validated using a digital multimeter under different load conditions. A 1 kΩ load resistor was used to emulate the maximum 10mA current draw. The physical implementation successfully demonstrated a load regulation of 0.69%.
